@@ -9,13 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var swooshLogo: UIImageView!
-    @IBOutlet weak var backgroundImage: UIImageView!
+  
+  @IBOutlet weak var swooshLogo: UIImageView!
+  @IBOutlet weak var backgroundImage: UIImageView!
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  
+  @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  }
 }
+
 

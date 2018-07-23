@@ -28,6 +28,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UfG-xd-mhR" kind="show" id="sUl-4R-vlw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-Pl-G8p">
                                 <rect key="frame" x="16" y="310.5" width="343" height="46.5"/>
@@ -140,6 +143,13 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCw-4B-dKO">
+                                <rect key="frame" x="16" y="36" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="QbN-Fy-0tx" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="X4I-0t-NDv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -158,12 +168,15 @@
                             <constraint firstItem="wwX-am-aSh" firstAttribute="centerX" secondItem="GAA-Vj-Zqv" secondAttribute="centerX" id="nLC-Eu-eeg"/>
                             <constraint firstItem="X0y-an-nEd" firstAttribute="bottom" secondItem="z90-lT-14e" secondAttribute="bottom" id="oBq-aj-KSP"/>
                             <constraint firstItem="wwX-am-aSh" firstAttribute="top" secondItem="z90-lT-14e" secondAttribute="top" constant="20" id="rUa-0t-xay"/>
+                            <constraint firstItem="zCw-4B-dKO" firstAttribute="leading" secondItem="z90-lT-14e" secondAttribute="leading" constant="16" id="xYt-s7-cbb"/>
                             <constraint firstItem="z90-lT-14e" firstAttribute="bottom" secondItem="0MK-dx-XsY" secondAttribute="bottom" constant="16" id="yfz-ND-06V"/>
+                            <constraint firstItem="zCw-4B-dKO" firstAttribute="top" secondItem="z90-lT-14e" secondAttribute="top" constant="16" id="zyj-bc-P2G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z90-lT-14e"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDZ-Op-HLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QbN-Fy-0tx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="925.60000000000002" y="130.88455772113943"/>
         </scene>
@@ -245,6 +258,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
