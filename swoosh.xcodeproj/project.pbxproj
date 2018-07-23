@@ -17,6 +17,7 @@
 		85F3A5C521061AB700FB2765 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3A5C421061AB700FB2765 /* BorderButton.swift */; };
 		85F3A5C921066E3100FB2765 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3A5C821066E3100FB2765 /* LeagueViewController.swift */; };
 		85F3A5CB21066E4E00FB2765 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3A5CA21066E4E00FB2765 /* SkillViewController.swift */; };
+		85F3A5CD21067C3A00FB2765 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3A5CC21067C3A00FB2765 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		85F3A5C421061AB700FB2765 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		85F3A5C821066E3100FB2765 /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		85F3A5CA21066E4E00FB2765 /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		85F3A5CC21067C3A00FB2765 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		85F3A5C721066D7500FB2765 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				85F3A5CC21067C3A00FB2765 /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F3A5CD21067C3A00FB2765 /* Player.swift in Sources */,
 				85F3A5982106149700FB2765 /* WelcomeViewController.swift in Sources */,
 				85F3A5962106149700FB2765 /* AppDelegate.swift in Sources */,
 				85F3A5CB21066E4E00FB2765 /* SkillViewController.swift in Sources */,

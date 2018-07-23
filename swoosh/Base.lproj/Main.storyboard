@@ -107,6 +107,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensButtonTapped:" destination="UfG-xd-mhR" eventType="touchUpInside" id="dfF-bu-2Kb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6w-cU-gdv" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="53" width="311" height="36"/>
@@ -115,6 +118,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensButtonTapped:" destination="UfG-xd-mhR" eventType="touchUpInside" id="WGq-KS-YpL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cs-1S-Hfv" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="106" width="311" height="36"/>
@@ -123,6 +129,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdButtonTapped:" destination="UfG-xd-mhR" eventType="touchUpInside" id="d0h-ik-uo7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -135,7 +144,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-dx-XsY" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-dx-XsY" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="615" width="343" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.47388698629999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
@@ -178,13 +187,14 @@
                         <viewLayoutGuide key="safeArea" id="z90-lT-14e"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="0MK-dx-XsY" id="N5D-ay-bQ7"/>
                         <segue destination="f29-As-yjk" kind="show" identifier="skillVCSegue" id="SRZ-yE-1kY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDZ-Op-HLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QbN-Fy-0tx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="925.60000000000002" y="130.88455772113943"/>
+            <point key="canvasLocation" x="932" y="131"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="yc8-vw-vPx">
